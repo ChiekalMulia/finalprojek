@@ -44,6 +44,20 @@ public class home extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         panelmain = new javax.swing.JPanel();
+        panelmainhome = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        panelmainfavorit = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        panelmaingenre = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -85,7 +99,7 @@ public class home extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelloginLayout.createSequentialGroup()
-                .addContainerGap(297, Short.MAX_VALUE)
+                .addContainerGap(328, Short.MAX_VALUE)
                 .addGroup(panelloginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelloginLayout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -113,7 +127,7 @@ public class home extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         getContentPane().add(panellogin, "card2");
@@ -144,7 +158,7 @@ public class home extends javax.swing.JFrame {
         panelmenu.setLayout(panelmenuLayout);
         panelmenuLayout.setHorizontalGroup(
             panelmenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelmenuLayout.createSequentialGroup()
+            .addGroup(panelmenuLayout.createSequentialGroup()
                 .addContainerGap(48, Short.MAX_VALUE)
                 .addGroup(panelmenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
@@ -165,23 +179,157 @@ public class home extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel9)
                 .addContainerGap())
         );
 
         panelmain.setBackground(new java.awt.Color(255, 255, 255));
+        panelmain.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout panelmainLayout = new javax.swing.GroupLayout(panelmain);
-        panelmain.setLayout(panelmainLayout);
-        panelmainLayout.setHorizontalGroup(
-            panelmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 464, Short.MAX_VALUE)
+        panelmainhome.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel10.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel10.setText("Terbaru");
+
+        jLabel11.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel11.setText("Trending");
+
+        jLabel12.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel12.setText("Artis populer");
+
+        jTextField3.setBackground(new java.awt.Color(130, 213, 238));
+
+        javax.swing.GroupLayout panelmainhomeLayout = new javax.swing.GroupLayout(panelmainhome);
+        panelmainhome.setLayout(panelmainhomeLayout);
+        panelmainhomeLayout.setHorizontalGroup(
+            panelmainhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmainhomeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelmainhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField3)
+                    .addGroup(panelmainhomeLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel11)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel12)
+                        .addGap(0, 204, Short.MAX_VALUE)))
+                .addContainerGap())
         );
-        panelmainLayout.setVerticalGroup(
-            panelmainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        panelmainhomeLayout.setVerticalGroup(
+            panelmainhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmainhomeLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(panelmainhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(325, Short.MAX_VALUE))
         );
+
+        panelmain.add(panelmainhome, "card2");
+
+        panelmainfavorit.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel13.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel13.setText("My favourite song");
+
+        jTextField4.setBackground(new java.awt.Color(130, 213, 238));
+
+        javax.swing.GroupLayout panelmainfavoritLayout = new javax.swing.GroupLayout(panelmainfavorit);
+        panelmainfavorit.setLayout(panelmainfavoritLayout);
+        panelmainfavoritLayout.setHorizontalGroup(
+            panelmainfavoritLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmainfavoritLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelmainfavoritLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelmainfavoritLayout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addGap(0, 333, Short.MAX_VALUE))
+                    .addComponent(jTextField4))
+                .addContainerGap())
+        );
+        panelmainfavoritLayout.setVerticalGroup(
+            panelmainfavoritLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmainfavoritLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(326, Short.MAX_VALUE))
+        );
+
+        panelmain.add(panelmainfavorit, "card3");
+
+        panelmaingenre.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel14.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel14.setText("Pop");
+
+        jTextField5.setBackground(new java.awt.Color(130, 213, 238));
+
+        jLabel15.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel15.setText("jazz");
+
+        jLabel16.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel16.setText("Reggae");
+
+        jLabel17.setBackground(new java.awt.Color(130, 213, 238));
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(130, 213, 238));
+        jLabel17.setText("k-pop");
+
+        javax.swing.GroupLayout panelmaingenreLayout = new javax.swing.GroupLayout(panelmaingenre);
+        panelmaingenre.setLayout(panelmaingenreLayout);
+        panelmaingenreLayout.setHorizontalGroup(
+            panelmaingenreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmaingenreLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelmaingenreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelmaingenreLayout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel15)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel16)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel17)
+                        .addGap(0, 257, Short.MAX_VALUE))
+                    .addComponent(jTextField5))
+                .addContainerGap())
+        );
+        panelmaingenreLayout.setVerticalGroup(
+            panelmaingenreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelmaingenreLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(panelmaingenreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(327, Short.MAX_VALUE))
+        );
+
+        panelmain.add(panelmaingenre, "card4");
 
         javax.swing.GroupLayout panelhomeLayout = new javax.swing.GroupLayout(panelhome);
         panelhome.setLayout(panelhomeLayout);
@@ -190,7 +338,7 @@ public class home extends javax.swing.JFrame {
             .addGroup(panelhomeLayout.createSequentialGroup()
                 .addComponent(panelmenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelmain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(panelmain, javax.swing.GroupLayout.DEFAULT_SIZE, 495, Short.MAX_VALUE))
         );
         panelhomeLayout.setVerticalGroup(
             panelhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,6 +389,14 @@ public class home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -251,10 +407,16 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel labelusername;
     private javax.swing.JPanel panelhome;
     private javax.swing.JPanel panellogin;
     private javax.swing.JPanel panelmain;
+    private javax.swing.JPanel panelmainfavorit;
+    private javax.swing.JPanel panelmaingenre;
+    private javax.swing.JPanel panelmainhome;
     private javax.swing.JPanel panelmenu;
     // End of variables declaration//GEN-END:variables
 }
