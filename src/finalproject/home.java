@@ -36,6 +36,7 @@ public class home extends javax.swing.JFrame {
         labelusername = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        closeButton = new javax.swing.JButton();
         panelhome = new javax.swing.JPanel();
         panelmenu = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -80,9 +81,15 @@ public class home extends javax.swing.JFrame {
         jButton1.setAlignmentX(0.5F);
         jButton1.setIconTextGap(10);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\ppt\\png\\musik\\images-removebg-preview.png")); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setPreferredSize(new java.awt.Dimension(20, 20));
+
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                closeButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelloginLayout = new javax.swing.GroupLayout(panellogin);
         panellogin.setLayout(panelloginLayout);
@@ -106,7 +113,10 @@ public class home extends javax.swing.JFrame {
                         .addGap(73, 73, 73))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelloginLayout.createSequentialGroup()
                         .addComponent(jButton1)
-                        .addGap(261, 261, 261))))
+                        .addGap(261, 261, 261))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelloginLayout.createSequentialGroup()
+                        .addComponent(closeButton)
+                        .addContainerGap())))
         );
         panelloginLayout.setVerticalGroup(
             panelloginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,7 +137,9 @@ public class home extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addComponent(closeButton)
+                .addContainerGap())
         );
 
         getContentPane().add(panellogin, "card2");
@@ -338,7 +350,7 @@ public class home extends javax.swing.JFrame {
             .addGroup(panelhomeLayout.createSequentialGroup()
                 .addComponent(panelmenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelmain, javax.swing.GroupLayout.DEFAULT_SIZE, 495, Short.MAX_VALUE))
+                .addComponent(panelmain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelhomeLayout.setVerticalGroup(
             panelhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,6 +362,11 @@ public class home extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_closeButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -387,6 +404,7 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton closeButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
